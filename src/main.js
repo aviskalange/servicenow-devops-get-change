@@ -78,7 +78,7 @@ const main = async () => {
             if (stageName == null || stageName == '')
                 stageName = `${githubContext.job}`;
 
-            console.log("buildNumber => " + buildNumber + ", pipelineName => " + pipelineName + ", stageName => " + stageName);
+            console.log("buildNumber => " + buildNumber + ", pipelineName => " + pipelineName + ", stageName => " + stageName + ", attemptNumber => " + attemptNumber);
 
 
             let restendpoint = '';
