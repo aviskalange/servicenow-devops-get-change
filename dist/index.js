@@ -9097,6 +9097,10 @@ const main = async () => {
             if (stageName == null || stageName == '')
                 stageName = `${githubContext.job}`;
 
+            if (attemptNumber == null)
+                attemptNumber = `${githubContext.run_attempt}`;
+                
+
             console.log("buildNumber => " + buildNumber + ", pipelineName => " + pipelineName + ", stageName => " + stageName + ", attemptNumber => " + attemptNumber);
 
             let restendpoint = '';
